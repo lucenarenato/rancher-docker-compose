@@ -4,6 +4,10 @@ Install Rancher with the docker-compose.yaml in this project with the following 
 
 ```docker-compose up -d```
 
+OR
+
+docker run -d --restart=unless-stopped --name rancher --hostname rancher --privileged -p 80:80 -p 443:443 rancher/rancher:latest`
+
 ### Kubernetes DNS
 
 This can be a handy way to add DNS entries into the Kubernetes DNS:
